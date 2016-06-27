@@ -4,6 +4,7 @@ iBStools(integrated Bisulfite Sequencing Tools) is an integrated tools for compr
 
 ![workflow](https://github.com/methylation/iBSTools/blob/master/imgs/workflow.png "foo")
 
+--
 ####Modules
 --
 iBSTools has four modules:
@@ -12,8 +13,9 @@ iBSTools has four modules:
 * **refumr** - identification of reference methyalted regions among mutiple methylomes.
 * **dmr** - identification of differentially methylated regions among two groups
 
-####Manual
 --
+####Manual
+
 * Simple Examples:
 
 __Usage:__ Convert "H1_bismark.cov" into "wig" format. Methy counts is in col 5,unmethy counts is in col 6.
@@ -35,8 +37,9 @@ __Usage:__ Identify differentially methylated regions for a specific genomic reg
 
 * More details please read the wiki[iBSTools wiki](https://github.com/methylation/iBSTools/wiki)
 
-####Using Tips
 --
+####Using Tips
+
 1. If you use PBS(Portable Batch System) in your cluster server , **avoid to appoint relative path** for “-o,--outdir” and other parameters which need to assign path because workspace is changed when pbs file is submitted. 
 
 2. wiggle format

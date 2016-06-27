@@ -6,7 +6,7 @@ iBStools(integrated Bisulfite Sequencing Tools) is an integrated tools for compr
 
 --
 ####Modules
---
+
 iBSTools has four modules:
 * **towig** - methylation level file to Wiggle format
 * **pattern** - identification of methylation patterns  of genomic reigons

@@ -16,7 +16,7 @@ iBSTools has four modules:
 --
 ####Manual
 
-* Simple Examples:
+* These are simple examples, more details please read the wiki[iBSTools wiki](https://github.com/methylation/iBSTools/wiki)
 
 __Usage:__ Convert "H1_bismark.cov" into "wig" format. Methy counts is in col 5,unmethy counts is in col 6.
 ```shell
@@ -34,9 +34,6 @@ __Usage:__ Identify differentially methylated regions for a specific genomic reg
 ```shell
 dmr -r ref_UM/ref_UM.bed -rh 1 -w1 file_list_1.txt  -w2 file_list_2.txt -o diff
 ```
-
-* More details please read the wiki[iBSTools wiki](https://github.com/methylation/iBSTools/wiki)
-
 
 --
 ####Using Tips

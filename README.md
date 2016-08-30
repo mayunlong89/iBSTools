@@ -38,7 +38,7 @@ dmr -r ref_UM/ref_UM.bed -rh 1 -w1 file_list_1.txt  -w2 file_list_2.txt -o diff
 --
 ####Using Tips
 
-1. If you use PBS(Portable Batch System) in your cluster server , **avoid to appoint relative path** for `-o,--outdir` and other parameters which need to assign path because workspace is changed when pbs file is submitted. 
+1. If you use PBS(Portable Batch System) in your cluster server, **avoid to appoint relative path** for `-o,--outdir` and other parameters which need to assign path because workspace will be changed when pbs file is submitted. 
 
 2. wiggle format
 More detail information in [UCSC Genome Browser: Wiggle Track Format (WIG)](http://genome.ucsc.edu/goldenPath/help/wiggle.html).
@@ -49,6 +49,6 @@ and iBSTools is tested in R2.x and perl v5.10.x...
 iBSTools just employs basic funtions in `R` and `perl`. So almost all of versions of R and perl is available.
 
 4. dependence relationship
-towig is independent. Input could come from `BSMAP`,`Bismark` or ENCODE.
+towig is independent. Input could come from `BSMAP`,`Bismark` or ENCODE, Roadmap, TCGA.
 pattern is independent. 
-refumr requires pattern.
+refumr requires pattern. 

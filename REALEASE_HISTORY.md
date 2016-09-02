@@ -1,4 +1,14 @@
 ##Release History
+####v1.1.2 2016/9/2
+* Fixed a bug which was caused by UM_count was 0. [pattern]
+* Support .wig.gz input format. [pattern]
+
+####v1.1.1 2016/7/7
+* Renamed tool 'refumr' to 'refpattern'. 
+* Fixed a bug which was caused by incomplete chromosome. [refpattern]
+* Supported wig files seperated by 'comma'. [refpattern, dmr]
+* Add example wig files. [refpattern]
+* Check chromosome naming scheme. [refpattern]
 
 ####v1.1.0 2016/6/27
 * Added a new tool 'dmr' to identify differently methylated regions for a specific region.
@@ -23,3 +33,4 @@
 * Added a new tool 'towig' to coverted mutiple methylation level input file to wig file, modified from Normalization.
 * Added a new tool 'pattern' to identify methylated pattern regions in bisulfite sequencing, modified from CpG_MPs2.1.2.
 * Added a new tool 'refumr' to identify highly accurate umr among mutiple bisulfite sequencing methylomes.
+*

@@ -55,5 +55,5 @@ refumr requires pattern.
 
 --
 ####Realease history
-More details please read the [iBSTools wiki](https://github.com/methylation/iBSTools/wiki)
+More details please read the [Realease History](https://github.com/methylation/iBSTools/blob/master/REALEASE_HISTORY.md)
 

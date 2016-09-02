@@ -52,3 +52,8 @@ iBSTools just employs basic funtions in `R` and `perl`. So almost all of version
 towig is independent. Input could come from `BSMAP`,`Bismark` or ENCODE, Roadmap, TCGA.
 pattern is independent. 
 refumr requires pattern. 
+
+--
+####Realease history
+More details please read the [iBSTools wiki](https://github.com/methylation/iBSTools/wiki)
+

@@ -2,6 +2,11 @@
 ##iBSTools
 &emsp;&emsp;iBStools(integrated Bisulfite Sequencing Tools) is an integrated tools for comprehensive analysis of bisulfite sequencing reads including whole genome bisulfite sequencing(WGBS) and reduced representation bisulfite sequencing (RRBS). It is not only comprised of a serial of basic tools of bisulfite sequencing reads mapping and quality control, methylation ratio assessment and statistics at single-base resolution, but new advanced tools for DNA methylation patterns (under-methylated, inter-methylated and full-methylated regions) identification, annotation and heterogeneity assessment, as well as identification and clustering group analysis of differentially methylated regions of paired and multiple samples cohorts. iBStools provides a comprehensive suite  to perform a wide  variety of bisulfite sequencing analysis.
 
+####What could iBSTools help you do?
+* When you have **a methylation profile** at single base resolution. `towig` convert it into ".wig" format to visualize on UCSC. `pattern` identifies methylated pattern regions from single CpGs.  
+* When you have **mutiple methylomes** to analysis, mapping them into a common region(eg. CpG islands, promoter) is necessary. `refpattern` defines an uniform methylation region better than CGI or promoter for mutiple methylomes.
+* When you have **two groups of methylomes** to analysis their difference. `dmr` identifies differentially methylated for specific regions(eg. CpG islands, promoter, refpattern output).
+
 ![workflow](https://github.com/methylation/iBSTools/blob/master/imgs/workflow.png "foo")
 
 --

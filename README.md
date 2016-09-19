@@ -2,7 +2,7 @@
 ##iBSTools
 &emsp;&emsp;iBStools(integrated Bisulfite Sequencing Tools) is an integrated tools for comprehensive analysis of bisulfite sequencing reads including whole genome bisulfite sequencing(WGBS) and reduced representation bisulfite sequencing (RRBS). 
 
-iBSTools has four modules:
+&emsp;&emsp;iBSTools has four modules:
 * **towig** - methylation level file to Wiggle format
 * **pattern** - identification of methylation patterns  of genomic reigons
 * **refumr** - identification of reference methyalted regions among mutiple methylomes.

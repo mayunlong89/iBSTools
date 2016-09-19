@@ -10,6 +10,8 @@
 ![workflow](https://github.com/methylation/iBSTools/blob/master/imgs/sketch.png "foo")
 
 --
+####Install
+&emsp;&emsp;iBSTools can be used directly after decompressing. 
 ####Modules
 
 iBSTools has four modules:

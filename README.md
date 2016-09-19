@@ -7,7 +7,7 @@
 * When you have **mutiple methylomes** to analysis, mapping them into a common region(eg. CpG islands, promoter) is necessary. `refpattern` defines an uniform methylation region better than CGI or promoter for mutiple methylomes.
 * When you have **two groups of methylomes** to analysis their difference. `dmr` identifies differentially methylated for specific regions(eg. CpG islands, promoter, refpattern output).
 
-![workflow](https://github.com/methylation/iBSTools/blob/master/imgs/workflow.png "foo")
+![workflow](https://github.com/methylation/iBSTools/blob/master/imgs/sketch.png "foo")
 
 --
 ####Modules

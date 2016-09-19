@@ -2,18 +2,12 @@
 ##iBSTools
 &emsp;&emsp;iBStools(integrated Bisulfite Sequencing Tools) is an integrated tools for comprehensive analysis of bisulfite sequencing reads including whole genome bisulfite sequencing(WGBS) and reduced representation bisulfite sequencing (RRBS). It is not only comprised of a serial of basic tools of bisulfite sequencing reads mapping and quality control, methylation ratio assessment and statistics at single-base resolution, but new advanced tools for DNA methylation patterns (under-methylated, inter-methylated and full-methylated regions) identification, annotation and heterogeneity assessment, as well as identification and clustering group analysis of differentially methylated regions of paired and multiple samples cohorts. iBStools provides a comprehensive suite  to perform a wide  variety of bisulfite sequencing analysis.
 
-####What could iBSTools help you do?
-* When you have **a methylation profile** at single base resolution. `towig` convert it into ".wig" format to visualize on UCSC. `pattern` identifies methylated pattern regions from single CpGs.  
-* When you have **mutiple methylomes** to analysis, mapping them into a common region(eg. CpG islands, promoter) is necessary. `refpattern` defines an uniform methylation region better than CGI or promoter for mutiple methylomes.
-* When you have **two groups of methylomes** to analysis their difference. `dmr` identifies differentially methylated for specific regions(eg. CpG islands, promoter, refpattern output).
-
 ![workflow](https://github.com/methylation/iBSTools/blob/master/imgs/sketch.png "foo")
 
 --
-####Install
+###Install
 &emsp;&emsp;iBSTools can be used directly after decompressing. 
-####Modules
-
+###Modules
 iBSTools has four modules:
 * **towig** - methylation level file to Wiggle format
 * **pattern** - identification of methylation patterns  of genomic reigons
@@ -21,13 +15,13 @@ iBSTools has four modules:
 * **dmr** - identification of differentially methylated regions among two groups
 
 --
-####Manual
+###Manual
 
 * These are simple examples, more details please read the [iBSTools wiki](https://github.com/methylation/iBSTools/wiki)
 
 __Usage:__ Convert "H1_bismark.cov" into "wig" format. Methy counts is in col 5,unmethy counts is in col 6.
 ```shell
-towig --methy_unmethy 5,6 -i H1_bismark.cov -o H1_wig -n H1
+towig -t bismark -n H1 -r hg19.fa -i H1_bt2.bismark.cov -o H1_wig
 ```
 __Usage:__ Identify methylation patterns from "H1_wig/".
 ```shell
@@ -43,7 +37,7 @@ dmr -r ref_UM/ref_UM.bed -rh 1 -w1 file_list_1.txt  -w2 file_list_2.txt -o diff
 ```
 
 --
-####Using Tips
+###Using Tips
 
 1. If you use PBS(Portable Batch System) in your cluster server, **avoid to appoint relative path** for `-o,--outdir` and other parameters which need to assign path because workspace will be changed when pbs file is submitted. 
 

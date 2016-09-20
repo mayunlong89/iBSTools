@@ -8,7 +8,7 @@
 * **refumr** - identification of reference methyalted regions among mutiple methylomes.
 * **dmr** - identification of differentially methylated regions among two groups
 
-![workflow](https://github.com/methylation/iBSTools/blob/master/imgs/sketch.png "foo")
+![workflow](https://github.com/methylation/iBSTools/blob/master/imgs/sketch_map.png "foo")
 
 --
 ###Install

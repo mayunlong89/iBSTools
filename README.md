@@ -14,6 +14,9 @@
 --
 ###Install
 &emsp;&emsp;iBSTools can be used directly after decompressing. 
+```
+unzip iBSTools-master.zip
+```
 
 --
 ###Manual

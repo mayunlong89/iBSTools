@@ -1,4 +1,7 @@
 ##Release History
+####v1.1.3 2016/11/6
+* Support .gz input format. [towig]
+
 ####v1.1.2 2016/9/2
 * Fixed a bug which was caused by UM_count was 0. [pattern]
 * Support .wig.gz input format. [pattern]

@@ -1,6 +1,7 @@
 ##Release History
 ####v1.1.3 2016/11/6
 * Support .gz input format. [towig]
+* Modify mannual for all modules.
 
 ####v1.1.2 2016/9/2
 * Fixed a bug which was caused by UM_count was 0. [pattern]
@@ -36,4 +37,3 @@
 * Added a new tool 'towig' to coverted mutiple methylation level input file to wig file, modified from Normalization.
 * Added a new tool 'pattern' to identify methylated pattern regions in bisulfite sequencing, modified from CpG_MPs2.1.2.
 * Added a new tool 'refumr' to identify highly accurate umr among mutiple bisulfite sequencing methylomes.
-*

@@ -1,4 +1,24 @@
 ##Release History
+##next: "region evaluation"
+
+####v1.2.2 2017/3/9
+* Fixed a bug which was caused by chromosome with no methylation value. [bed_mean_methy]
+* Redesign data structure of methy matrix to improve the running speed(almost ten times). [bed_mean_methy]
+
+####v1.2.1 2017/1/12
+* Add a new tool "bed_mean_methy": caluculate mean methylation for predefined genomic regions.
+
+####v1.2.0 2016/12/4
+* Rewrite the tool "towig";
+	1. count whole CGs in genome.(need to specify genome assembly file)
+	2. count whole detected CGs, whole available CGs(>=depth threshold)
+	3. methylation statics: mean methylation level.
+	4. merge reads counts for a CG site in two strands.
+* Support "bismark" file format.
+
+####v1.1.4 2016/12/1
+* Add format option '-t,--file_type', which could be specified "bismark", "bsmap", "roadmap", "custom" [towig]
+
 ####v1.1.3 2016/11/6
 * Support .gz input format. [towig]
 * Modify mannual for all modules.
@@ -9,7 +29,7 @@
 * Support .wig.gz input format. [pattern]
 
 ####v1.1.1 2016/7/7
-* Renamed tool 'refumr' to 'refpattern'. 
+* Renamed the tool 'refumr' to 'refpattern'. 
 * Fixed a bug which was caused by incomplete chromosome. [refpattern]
 * Supported wig files seperated by 'comma'. [refpattern, dmr]
 * Add example wig files. [refpattern]

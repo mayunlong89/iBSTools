@@ -1,5 +1,4 @@
 ##Release History
-##next: "region evaluation"
 
 ####v1.2.2 2017/3/9
 * Fixed a bug which was caused by chromosome with no methylation value. [bed_mean_methy]

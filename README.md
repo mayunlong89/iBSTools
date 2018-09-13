@@ -1,5 +1,5 @@
 
-##iBSTools
+## iBSTools
 &emsp;&emsp;iBStools(integrated Bisulfite Sequencing Tools) is an integrated tools for comprehensive analysis of bisulfite sequencing reads including whole genome bisulfite sequencing(WGBS) and reduced representation bisulfite sequencing (RRBS). 
 >iBSTools is unpublished.
 
@@ -12,14 +12,14 @@
 ![workflow](https://github.com/methylation/iBSTools/blob/master/imgs/sketch_map.png "foo")
 
 --
-###Install
+### Install
 iBSTools can be used directly after decompressing. 
 ```
 unzip iBSTools-master.zip
 ```
 
 --
-###Manual
+### Manual
 
 * These are simple examples, more details please read the [iBSTools wiki](https://github.com/methylation/iBSTools/wiki)
 
@@ -41,7 +41,7 @@ dmr -r ref_UM/ref_UM.bed -rh 1 -w1 file_list_1.txt  -w2 file_list_2.txt -o diff
 ```
 
 --
-###Using Tips
+### Using Tips
 
 1. If you use PBS(Portable Batch System) in your cluster server, **avoid to appoint relative path** for `-o,--outdir` and other parameters which need to assign path because workspace will be changed when pbs file is submitted. 
 
@@ -59,6 +59,6 @@ pattern is independent.
 refumr requires pattern. 
 
 --
-####Realease history
+#### Realease history
 More details please read the [Realease History](https://github.com/methylation/iBSTools/blob/master/REALEASE_HISTORY.md)
 

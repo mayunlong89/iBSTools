@@ -1,0 +1,43 @@
+#!/usr/bin/python
+# coding=utf-8
+
+# The gap between two CGs was filled with the left CG
+
+import os
+import sys
+import argparse
+
+#0. arguments control
+if len(sys.argv) == 1:
+	sys.exit("Show help message: python " + sys.argv[0] + " -h")
+
+parser = argparse.ArgumentParser(description="Convert variableStep methylation wiggle file into bedGraph wiggle file for deeptools. Example: wigToDeeptools -i BCA0880T_methy.wig -o BCA0880T_deeptools.wig")
+parser.add_argument("-i", "--inwig", help="input wiggle file, variable step: pos, value")
+parser.add_argument("-o", "--outwig", help="output wiggle file for deeptools: chr, start, end, value")
+
+args = parser.parse_args()
+
+#1. wig to wig(deeptools bedGraph)
+inwig = args.inwig
+outwig = args.outwig
+
+fi = open(inwig, "r")
+fo = open(outwig, "w")
+lines = fi.readlines()
+for i in range(len(lines)-1):
+	line_now = lines[i].strip().split('\t')
+	line_pos = lines[i+1].strip().split('\t') #next line
+	if line_pos[0].find('variableStep') == 0: #chrom end
+		continue
+	if line_now[0].find('variableStep') == 0: #chrom start
+		chrID = line_now[0].split('=')[1]
+	elif len(line_now) == 2: #pos methy
+		start = line_now[0]
+		if int(line_pos[0]) - int(line_now[0]) < 400:
+			end = line_pos[0]
+		else:
+			end = str(int(line_now[0])+400)
+		fo.write(chrID+'\t'+start+'\t'+end+'\t'+line_now[1]+'\n')
+
+fo.flush()
+fi.close()
